@@ -12,6 +12,5 @@ export class PrismaService extends PrismaClient implements OnModuleInit {
 
   async onModuleInit() {
     await this.$connect();
-    console.log('Conexion a Sentinel DB (PostgreSQL) establecida correctamente.');
   }
 }
