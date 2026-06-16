@@ -1,28 +1,17 @@
-// Configuración del generador del cliente TypeScript de Prisma
 generator client {
   provider = "prisma-client-js"
 }
 
-// Configuración de la fuente de datos (PostgreSQL)
-// La URL se toma del archivo .env via prisma.config.ts
 datasource db {
   provider = "postgresql"
 }
 
-// Modelo: Defect
-// Representa un defecto o incidencia de software reportado por el equipo QA.
-// Esta tabla es el Punto Único de Verdad del sistema Sentinel QA.
 model Defect {
-  id          String   @id @default(uuid())  // Identificador único universal (UUID)
-  title       String                          // Título breve del defecto
-  description String                          // Pasos para reproducir el error
-
-  // Severidad: CRITICAL | HIGH | MEDIUM | LOW
+  id          String   @id @default(uuid())
+  title       String
+  description String
   severity    String
-
-  // Estado (Ciclo de Vida del Bug): OPEN → IN_PROGRESS → RESOLVED → CLOSED
   status      String   @default("OPEN")
-
-  createdAt   DateTime @default(now())       // Fecha de creación (automática)
-  updatedAt   DateTime @updatedAt            // Fecha de última actualización (automática)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 }
