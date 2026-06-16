@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compileOnSave": false,
+  "files": [],
+  "references": [
+    {
+      "path": "./api-backend-e2e"
+    },
+    {
+      "path": "./api-backend"
+    },
+    {
+      "path": "./web-frontend-e2e"
+    },
+    {
+      "path": "./web-frontend"
+    }
+  ]
+}
