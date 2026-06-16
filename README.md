@@ -1,16 +1,15 @@
-# Sentinel QA — Bug & Defect Tracker
-### Prueba de Calidad del Software · Semana 09
-**DSI V Ciclo · Turno Noche**
+# Sentinel QA 
+FQ
 
 ---
 
-## Evidencia del Laboratorio
+## Evidencia
 
-### Captura 1 — Petición PATCH exitosa (Thunder Client)
+### Captura 1
 ![PATCH 200 OK](IMAGENES/SHOT1.png)
 
-### Captura 2 — Petición PATCH exitosa (Thunder Client)
+### Captura 2
 ![PATCH 200 OK](IMAGENES/SHOT2.png)
 
-### Captura 3 — Tabla Defect en pgAdmin
+### Captura 3
 ![Tabla Defect pgAdmin](IMAGENES/SHOT3.png)
